@@ -1,0 +1,158 @@
+.main-slider {
+    float:left;
+    position: relative;
+    width: 730px;
+    height: 454px;
+    margin:12px 0 0 220px;
+}
+.main-slider ul {
+    position: absolute;
+    left:50%;
+    bottom: 10px;
+    margin-left:-66px;
+}
+.main-slider li {
+    float: left;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    background-color: #3E3E3E;
+    color: #fff;
+    border-radius: 50%;
+    margin:0 2px;
+    cursor:pointer;
+}
+.main-slider .current {
+    background-color: pink;
+}
+.arrow a {
+    position: absolute;
+    top:50%;
+    margin-top:-31px;
+    width: 28px;
+    height: 62px;
+    /*下面保证里面的文字不变透明*/
+    background-color:rgba(0,0,0,0.2);
+    /*opacity: 0.2：会导致背景里面的文字也变透明;*/
+    color:#000;
+    text-align: center;
+    font:400 22px/62px "SimSun"
+}
+.arrow a:hover {
+    background:rgba(0,0,0,0.5);
+}
+.arrow-left {
+    border-radius:0 10px 10px 0;
+    left:0;
+}
+.arrow-right {
+    border-radius: 10px 0 0 10px;
+    right:0;
+}
+
+.main-news {
+    float:right;
+    height: 466px;
+    width: 250px;
+}
+.main-news-top {
+    width: 248px;
+    height: 372px;
+    overflow: hidden;
+    margin:12px 0 5px 0;
+    border: 1px solid #E4E4E4;
+}
+.main-news-top-faster {
+    height: 163px;
+    border-bottom: 1px dashed #E4E4E4;
+}
+.main-news-top-faster-title {
+    height: 32px;
+    line-height: 32px;
+    padding: 0 15px;
+    border-bottom: 1px dotted #E8E8E7;
+}
+.main-news-top-faster-title h2 {
+    float: left;
+    font:400 16px/32px "microsoft yahei";
+}
+.main-news-top-faster-title a {
+    float: right;
+    font-family: "Consolas ";
+}
+.main-news-top-faster-content {
+    padding:5px 0 0 15px;
+}
+.main-news-top-faster-content li {
+    line-height: 24px;
+}
+.main-news-top-faster-content span {
+    font-weight: 700;
+    margin-right: 5px;
+}
+.main-news-top-money ul {
+    width: 260px;
+}
+.main-news-top-money li {
+    width: 62px;
+    height: 70px;
+    margin-left:-1px;
+    margin-top:-1px;
+    float:left;
+    border: 1px solid #E8E8F7;
+}
+.main-news-top-money a {
+    display:block;
+    width: 62px;
+    height: 30px;
+    position: relative;
+    padding-top:40px;
+    text-align:center;
+    line-height: 30px;
+}
+.main-news-top-money i {
+    position: absolute;
+    top:13px;
+    left:18px;
+    width: 25px;
+    height: 25px;
+    background: url("../images/fly.png") no-repeat;
+}
+
+.main-news-top-money .icon2 {
+    background-position: 0 -25px;
+}
+.main-news-top-money .icon3 {
+    background-position: 0 -50px;
+}
+.main-news-top-money .icon4 {
+    background-position: 0 -75px;
+}
+.main-news-top-money .icon5 {
+    background-position: 0 -100px;
+}
+.main-news-top-money .icon6 {
+    background-position: 0 -125px;
+}
+.main-news-top-money .icon7 {
+    background-position: 0 -150px;
+}
+.main-news-top-money .icon8 {
+    background-position: 0 -175px;
+}
+.main-news-top-money .icon9 {
+    background-position: 0 -200px;
+}
+.main-news-top-money .icon10 {
+    background-position: 0 -225px;
+}
+.main-news-top-money .icon11 {
+    background-position: 0 -250px;
+}
+.main-news-top-money .icon12 {
+    background-position: 0 -275px;
+}
+.main-news-top-money span {
+
+}

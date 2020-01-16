@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/*main部分end*/
+.main-slider {
+    float: left;
+    width: 730px;
+    height: 454px;
+    margin: 12px 0 0 220px;
+    position: relative;
+}
+.main-slider ul {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -66px;
+}
+.main-slider li {
+    float: left;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+    margin: 0 2px;
+    background-color: #3e3e3e;
+    color: #fff;
+    cursor: pointer;
+}
+.main-slider .current {
+    background-color: #B61B1F;
+}
+.arrow a {
+    position: relative;
+    margin-top: -31px;
+    top: 50%;
+    width: 28px;
+    height: 62px;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    font: 400 22px/62px "simsun";
+}
+.arrow .arrow-left {
+    position: absolute;
+    left: 5px;
+}
+.arrow .arrow-right {
+    position: absolute;
+    right: 5px;
+}
+.main-news {
+    float: right;
+    height: 466px;
+    width: 250px;
+}
+.main-news-top {
+    height: 372px;
+    width: 248px;
+    margin: 12px 0 5px 0;
+    border: 1px solid #E4E4E4;
+}
+.main-news-top-faster {
+    height: 163px;
+    border-bottom: 1px dashed #E4E4E4;
+}
+.main-news-top-faster-title {
+    height: 32px;
+    padding: 0 15px;
+    line-height: 32px;
+    border-bottom: 1px dotted #E8E8E7;
+}
+.main-news-top-faster-title h3 {
+    float: left;
+    font: 400 16px/32px "microsoft yahei";
+}
+.main-news-top-faster-title a {
+    float: right;
+    font-family: "consolas";
+}
+.main-news-top-faster-content {
+    padding: 5px 0 0 15px;
+}
+.main-news-top-faster-content li {
+    height: 24px;
+}
+.main-news-top-money ul {
+    width: 260px;
+}
+.main-news-top-money li {
+    width: 62px;
+    height: 70px;
+    float: left;
+    margin-left: -1px;
+    margin-top: -1px;
+    border: 1px solid #E8E8E7;
+    border-top: 0;
+}
+.main-news-top-money a {
+    position: relative;
+    display: block;
+    width: 62px;
+    height: 30px;
+    padding-top: 40px;
+    text-align: center;
+    line-height: 30px;
+}
+.main-news-top-money i {
+    position: absolute;
+    top: 13px;
+    left: 18px ;
+    width: 25px;
+    height: 25px;
+    background: url("../images/fly.png") no-repeat;
+}
+.main-news-top-money .main-news-top-money-icon2 {
+    background-position: 0 -25px;
+}
+.main-news-top-money .main-news-top-money-icon3 {
+    background-position: 0 -50px;
+}
+.main-news-top-money .main-news-top-money-icon4 {
+    background-position: 0 -75px;
+}
+.main-news-top-money .main-news-top-money-icon5 {
+    background-position: 0 -100px;
+}
+.main-news-top-money .main-news-top-money-icon6 {
+    background-position: 0 -125px;
+}
+.main-news-top-money .main-news-top-money-icon7 {
+    background-position: 0 -150px;
+}
+.main-news-top-money .main-news-top-money-icon8 {
+    background-position: 0 -175px;
+}
+.main-news-top-money .main-news-top-money-icon9 {
+    background-position: 0 -200px;
+}
+.main-news-top-money .main-news-top-money-icon10 {
+    background-position: 0 -225px;
+}
+.main-news-top-money .main-news-top-money-icon11 {
+    background-position: 0 -250px;
+}
+
+/*main部分end*/
+
+
+/*today部分end*/
+.today {
+    margin: 10px auto 20px;
+}
+.today-left {
+    float: left;
+}
+.today-left a {
+    display: block;
+    width: 210px;
+    height: 151px;
+    background: url("../images/today.png") right bottom;
+}
+.today-right{
+    width: 1000px;
+    float: right;
+    overflow: hidden;
+}
+.today-right ul {
+    width: 410%;
+
+}
+.today-right li{
+   float: left;
+    margin-right: 1px;
+}
+/*today部分end*/
+
+
+/*footer部分end*/
+
+/*footer部分end*/
+
+
+/*footer部分end*/
+
+/*footer部分end*/
+

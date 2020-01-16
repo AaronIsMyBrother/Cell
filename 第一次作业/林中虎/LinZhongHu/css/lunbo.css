@@ -1,0 +1,11 @@
+.lunbo img{
+    width:730px ;
+    height: 454px;
+}
+.lunbotu{
+    position: absolute;
+    left:0px;
+    top:0;
+    /*z-index: 2;*/
+    display: none;
+}
