@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" version="1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>超级京东商城</title>
+  <link rel="stylesheet" href="./jd.css">
+  <script type="text/javascript">
+
+    var counter=0;
+
+    function change_img(){
+      counter++;
+      var e1=document.getElementById('img_1');
+      var e2=document.getElementById('img_2');
+      if(counter==1){
+        e1.style.display='inline-block';
+        e2.style.display='none';
+      }else if(counter==2){
+        e1.style.display='none';
+        e2.style.display="inline-block";
+      }else{
+        counter=0;
+      }
+    }
+    setInterval(change_img,3000);
+  </script>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navbar-left font-default">京西商城</div>
+
+    <div class="navbar-right">
+      <ul>
+        <li><a href="#">我的京西</a></li>
+        <li class="spacer"></li>
+        <li><a href="#">我的订单</a></li>
+        <li class="spacer"></li>
+        <li><a href="#">京西会员</a></li>
+        <li class="spacer"></li>
+        <li><a href="#">客户服务</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="header">
+    <div class="header-left"></div>
+    <div class="header-right-lever1">
+      <input type="text" placeholder="搜索"/>
+      <button>🔍</button>
+    </div>
+    <div class="header-right-lever2">
+      <a href="#" style="color:#e1251b">家具开门红</a>
+      <a href="#">8折卷</a>
+      <a href="#">运动鞋</a>
+      <a href="#">服装</a>
+      <a href="#">满一万减一千</a>
+      <a href="#">批量甩卖</a>
+      <a href="#">游戏手机</a>
+      <a href="#">文具</a>
+    </div>
+    <div class="header-right-lever3">
+      <a href="#" style="color:#e1251b">秒杀</a>
+      <a href="#" style="color:#e1251b">优惠卷</a>
+      <a href="#">超级会员</a>
+      <a href="#">品牌闪购</a>
+      <a href="#">拍卖</a>
+      <a href="#">京西家电</a>
+      <a href="#">京西国际</a>
+      <a href="#">京西金融</a>
+    </div>
+
+  </div>
+
+  <div class="main-bg" style="background-image: url('./img/bg.png');">
+  <div class="main-part-1 margin-horizontal-center" >
+    <div class="main-part-1-left">
+      <ul>
+        <li>
+          <a href="#">家用电器</a>
+        </li>
+        <li>
+          <a href="#">手机</a>/
+          <a href="#">运营商</a>/
+          <a href="#">数码</a>
+        </li>
+        <li>
+          <a href="#">电脑</a>/
+          <a href="#">办公</a>
+        </li>
+        <li>
+          <a href="#">家居</a>/
+          <a href="#">家居</a>/
+          <a href="#">家装</a>/
+          <a href="#">厨具</a>
+        </li>
+        <li>
+          <a href="#">男装</a>/
+          <a href="#">女装</a>/
+          <a href="#">童装</a>/
+          <a href="#">内衣</a>
+        </li>
+        <li>
+          <a href="#">美妆</a>/
+          <a href="#">个人清洁</a>/
+          <a href="#">宠物</a>
+        </li>
+        <li>
+          <a href="#">女鞋</a>/
+          <a href="#">箱包</a>/
+          <a href="#">钟表</a>/
+          <a href="#">珠宝</a>
+        </li>
+        <li>
+          <a href="#">男鞋</a>/
+          <a href="#">运动</a>/
+          <a href="#">户外</a>
+        </li>
+        <li>
+          <a href="#">房产</a>/
+          <a href="#">汽车</a>/
+          <a href="#">汽车用品</a>
+        </li>
+        <li>
+          <a href="#">母婴</a>/
+          <a href="#">汽车玩具</a>
+        </li>
+        <li>
+          <a href="#">食品</a>/
+          <a href="#">酒类</a>/
+          <a href="#">生鲜</a>/
+          <a href="#">特产</a>
+        </li>
+        <li>
+          <a href="#">艺术</a>/
+          <a href="#">礼品鲜花</a>/
+          <a href="#">农资绿植</a>
+        </li>
+        <li>
+          <a href="#">医药保健</a>/
+          <a href="#">计生情趣</a>
+        </li>
+        <li>
+          <a href="#">图书</a>/
+          <a href="#">文娱</a>/
+          <a href="#">教育</a>/
+          <a href="#">电子书</a>
+        </li>
+        <li>
+          <a href="#">机票</a>/
+          <a href="#">酒店</a>/
+          <a href="#">旅游</a>/
+          <a href="#">电子书</a>
+        </li>
+        <li>
+          <a href="#">理财</a>/
+          <a href="#">众筹</a>/
+          <a href="#">白条</a>/
+          <a href="#">保险</a>
+        </li>
+        <li>
+          <a href="#">安装</a>/
+          <a href="#">维修</a>/
+          <a href="#">清洗</a>/
+          <a href="#">二手</a>
+        </li>
+        <li>
+          <a href="#">工业品</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-part-1-center">
+      <a id="img_1" style="display:none" href="#">
+        <img src="./img/img1.jpg">
+      </a>
+      <a id="img_2" href="#">
+        <img src="./img/img2.jpg">
+      </a>
+    </div>
+    <div class="main-part-1-right">
+      <a href="#">
+        <img src="./img/right.png">
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
