@@ -1,61 +1,51 @@
 package com.aaron.controller;
 
+import com.aaron.bean.User;
+import com.aaron.dao.D;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-import java.util.Map;
+import java.util.Collection;
 
 @Controller
 public class C {
 
+
     @Autowired
-    JdbcTemplate jdbcTemplate;
+    D dao;
 
-    @ResponseBody
-    @GetMapping("/create")
-    public List<Map<String, Object>>  create(){
-        System.out.println(1);
-        jdbcTemplate.update("insert into test values('long',100)");
-        System.out.println(2);
-        List<Map<String,Object>> list=query();
-        System.out.println(3);
-        return list;
+    @RequestMapping("/run")
+    public String run(Model model){
+
+        Collection<User> users = dao.getAll();
+
+        model.addAttribute("users",users);
+
+        return "main";
     }
 
-    @ResponseBody
-    @GetMapping("/delete")
-    public List<Map<String, Object>> delete(){
-        System.out.println(4);
-        jdbcTemplate.execute("delete from test where name='long' ");
-        System.out.println(5);
-        List<Map<String,Object>> list=query();
-        System.out.println(6);
-        return list;
+    @RequestMapping("/toAddUserRequest")
+    public String toAddUser(){
+        return "addUser";
     }
 
-    @ResponseBody
-    @GetMapping("/update")
-    public List<Map<String,Object>> update(){
-        System.out.println(7);
-        jdbcTemplate.update("update test set age=200 where name='long'");
-        System.out.println(8);
-        List<Map<String,Object>> list=query();
-        System.out.println(9);
-        return list;
+    @PostMapping("/addUser")
+    public String addUser(User user){
+        dao.addUser(user);
+        return "redirect:/run";
     }
 
-    @ResponseBody
-    @GetMapping("/query")
-    public List<Map<String,Object>> query(){
-        System.out.println(10);
-        List<Map<String,Object>> list = jdbcTemplate.queryForList("select * from test");
-        System.out.println(11);
-        return list;
+    @PostMapping("/deleteUser/{name}")
+    public String deleteUser(@PathVariable("name")String name){
+        dao.deleteUser(name);
+        return "redirect:/run";
     }
 
+    @RequestMapping("/toUpdateUser")
+    public String updateUser(String name){
+        dao.updateUser(name);
+        return "updateUser";
+    }
 }

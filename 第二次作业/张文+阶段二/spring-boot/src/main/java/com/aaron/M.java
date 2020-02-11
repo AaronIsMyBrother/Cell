@@ -1,13 +1,10 @@
 package com.aaron;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import javax.sql.DataSource;
-
+@MapperScan(value = "com.aaron.dao")
 @SpringBootApplication
 public class M {
 

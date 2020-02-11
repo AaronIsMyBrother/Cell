@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aaron.dao.D">
+
+    <select id="getAll"  resultType="com.aaron.bean.User">
+        select * from test
+    </select>
+
+    <!--插入数据-->
+    <insert id="addUser" parameterType="com.aaron.bean.User">
+        insert into test(name,age) values(#{name},#{age})
+    </insert>
+
+    <!--删除数据-->
+    <delete id="deleteUser" parameterType="String">
+        delete from test where name=#{name}
+    </delete>
+
+</mapper>
