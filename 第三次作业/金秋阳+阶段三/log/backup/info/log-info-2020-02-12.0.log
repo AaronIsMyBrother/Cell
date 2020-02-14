@@ -1,0 +1,21 @@
+2020-02-12 22:10:19.737 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication on JinQiuyang with PID 16500 (D:\Maven\demo\target\classes started by dell in D:\Maven\demo)
+2020-02-12 22:10:19.741 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2020-02-12 22:10:20.872 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-02-12 22:10:20.882 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-02-12 22:10:20.882 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-12 22:10:20.883 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-12 22:10:20.885 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2020-02-12 22:10:20.886 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-02-12 22:10:20.886 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-02-12 22:10:20.889 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2020-02-12 22:10:20.965 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-12 22:10:20.965 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1120 ms
+2020-02-12 22:10:21.262 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-12 22:10:21.609 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-02-12 22:10:21.636 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2020-02-12 22:10:21.641 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 2.485 seconds (JVM running for 4.156)
+2020-02-12 22:10:37.301 [http-nio-8888-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-12 22:10:37.305 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-02-12 22:10:37.318 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2020-02-12 22:10:37.384 [http-nio-8888-exec-1] INFO  com.example.demo.DemoApplication - #####info#####
+2020-02-12 22:11:41.455 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

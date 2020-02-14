@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>添加成员信息</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/B.css}">
+</head>
+
+<body>
+<center>
+    <div>
+        <h3>添加成员信息</h3>
+    </div>
+    <div>
+        <form th:action="addUser" method="post">
+            <div>
+            <label>请输入姓名:</label>
+            <input type="text" placeholder="姓名：" name="name">
+            </div>
+
+            <div>
+            <label>请输入年龄:</label>
+            <input type="text" placeholder="年龄：" name="age">
+            </div>
+
+            <div>
+            <button type="submit">提交</button>
+            <button type="reset">重置</button>
+            </div>
+
+        </form>
+    </div>
+</center>
+</body>
+</html>
